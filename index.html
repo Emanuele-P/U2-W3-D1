@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        form,
+        ul {
+            margin-block: 4rem 1rem;
+            margin-inline: auto;
+            font-size: 20px;
+            border: 1px solid #333;
+            background-color: coral;
+            color: #333;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0px 6px 10px 0px #bbb;
+            position: relative;
+            padding-bottom: 4rem;
+            max-width: fit-content;
+        }
+
+        #list {
+            list-style: none;
+            min-width: 266px;
+            padding: 2rem;
+            background: skyblue;
+        }
+
+        li {
+            background-color: azure;
+            padding: 0.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            width: 200px;
+            border: 1px solid #333;
+            padding: 0.5rem;
+        }
+
+        button {
+            border-radius: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            padding: 0.5rem 1rem;
+            position: absolute;
+            bottom: 10px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="petForm">
+        <label for="petForm">Pet name:</label><br>
+        <input type="text" id="petName" name="petName">
+        <br>
+        <label for="ownerName">Owner's name:</label><br>
+        <input type="text" id="ownerName" name="ownerName">
+        <br>
+        <label for="species">Species:</label><br>
+        <input type="text" id="species" name="species">
+        <br>
+        <label for="breed">Breed:</label><br>
+        <input type="text" id="breed" name="breed">
+        <br>
+        <button type="button" id="submitBtn">Print</button>
+    </form>
+
+    <ul id="list">
+        <p>Pet list:</p>
+
+    </ul>
+
+
+    <script src="oop.js"></script>
+</body>
+
+</html>
